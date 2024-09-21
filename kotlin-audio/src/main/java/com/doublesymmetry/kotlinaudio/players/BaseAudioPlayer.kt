@@ -253,7 +253,7 @@ abstract class BaseAudioPlayer internal constructor(
             // Whether ExoPlayer should manage audio focus for us automatically
             // see https://medium.com/google-exoplayer/easy-audio-focus-with-exoplayer-a2dcbbe4640e
             val audioAttributes = AudioAttributes.Builder()
-                .setUsage(C.USAGE_MEDIA)
+                .setUsage(C.USAGE_VOICE_COMMUNICATION)
                 .setContentType(
                     when (playerConfig.audioContentType) {
                         AudioContentType.MUSIC -> C.AUDIO_CONTENT_TYPE_MUSIC
